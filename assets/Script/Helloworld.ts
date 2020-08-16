@@ -8,7 +8,7 @@ export default class Helloworld extends cc.Component {
 
     @property
     text: string = 'hello';
-
+ 
     start () {
         // init logic
         this.label.string = this.text;
