@@ -8,7 +8,9 @@ export default class LoadingScene extends cc.Component {
     start () {
         let loadbtn = this.node.getChildByName('loadBtn')
         loadbtn.on(cc.Node.EventType.TOUCH_END, () => {
-            cc.director.loadScene("mainScene")
+            this.node.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc( () =>{
+                cc.director.loadScene("mainScene")
+                })))
         })
     // setTimeout(() => {
     //     cc.director.loadScene("mainScene", () => {
@@ -16,5 +18,7 @@ export default class LoadingScene extends cc.Component {
     //     })
     // },2000)
     // cc.TransitionFad.create(200,"mainScene",cc.color(0,0,0))
+    
+    
     }
 }
