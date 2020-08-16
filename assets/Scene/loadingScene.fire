@@ -90,13 +90,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 22
-      },
-      {
         "__id__": 23
       },
       {
         "__id__": 24
+      },
+      {
+        "__id__": 25
       }
     ],
     "_prefab": null,
@@ -987,7 +987,11 @@
     "_grayMaterial": null,
     "duration": 0.1,
     "zoomScale": 1.2,
-    "clickEvents": [],
+    "clickEvents": [
+      {
+        "__id__": 22
+      }
+    ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
     "_N$transition": 1,
@@ -1056,6 +1060,16 @@
       "__id__": 16
     },
     "_id": "d8ZZms9JpCIp95kxO284Ni"
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 2
+    },
+    "component": "",
+    "_componentId": "e1b90/rohdEk4SdmmEZANaD",
+    "handler": "btngosence",
+    "customEventData": ""
   },
   {
     "__type__": "cc.Canvas",
